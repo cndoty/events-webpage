@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <title>My Events</title>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <script src="myScript.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script src="loadMap.js"></script>
+        <script src="mapScript.js"></script>
+        <script src="marker.js"></script>
+
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <table>
+                <tr>
+                    <td><a href=myEvents.html>My Events</a></td>
+                    <td><a href=myWidgets.html>My Widgets</a></td>
+                    <td><a href=myForm.html>My Form</a></td>
+                </tr>
+            </table>
+        </nav>
+        
+
+        <h1>My Events</h1>
+        
+        <div id="events">
+          <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Event</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Phone Number</th>
+                    <th>URL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr onmouseover="sundayOn()" onmouseout="sundayOff()">
+                    <td class="day">Sunday</td>
+                    <td class="event">Take a nap</td>
+                    <td class="time">1:00pm - 3:00pm</td>
+                    <td class="addr">1000 University Ave SE <br>Minneapolis, MN 55414
+                        <div id="S" > </div>    
+                    </td>
+                    <td>800-867-5309</td>
+                    <td><a href="https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/napping/art-20048319">Info</a></td>
+                </tr>
+                <tr onmouseover="mondayOn()" onmouseout="mondayOff()">
+                    <td class="day">Monday</td>
+                    <td class="event">Feed the squirrels outside my window</td>
+                    <td class="time">10:35pm - 10:47pm</td>
+                    <td class="addr">Zoom Meeting
+                        <div id="M"> </div>
+                    </td>
+                    <td>Link on Canvas</td>
+                    <td><a href="https://www.youtube.com/watch?v=jEOPp4iV1WQ">Info</a></td>
+                </tr>
+                <tr onmouseover="tuesdayOn()" onmouseout="tuesdayOff()">
+                    <td class="day">Tuesday</td>
+                    <td class="event">Manifest getting an A in this course</td>
+                    <td class="time">2:00am - 3:00am</td>
+                    <td class="addr">300 Washington Ave SE <br>Minneapolis, MN 55455
+                        <div id="T" > </div>
+                        </td>
+                    <td>(612) 625-5000</td>
+                    <td><a href="https://www.amazon.com/Grimoire-Spell-Book-Witchcraft-Manifestation/dp/1796339520">Info</a></td>
+                </tr>
+                <tr onmouseover="wednesdayOn()" onmouseout="wednesdayOff()">
+                    <td class="day">Wednesday</td>
+                    <td class="event">Make dino nuggets</td>
+                    <td class="time">7:00am - 12:00pm</td>
+                    <td class="addr">1000 University Ave SE <br>Minneapolis, MN 55414
+                        <div id="W" > </div>
+                    </td>
+                    <td>800-500-DINO</td>
+                    <td><a href="https://www.yummydinobuddies.com/products">Info</a></td>
+                </tr>
+                <tr onmouseover="thursdayOn()" onmouseout="thursdayOff()">
+                    <td class="day">Thursday</td>
+                    <td class="event">Work out</td>
+                    <td class="time">7:00pm - 7:05pm</td>
+                    <td class="addr">Zoom Meeting
+                        <div id="Th"> </div>
+                    </td>
+                    <td>Link on Canvas</td>
+                    <td><a href="https://www.youtube.com/watch?v=SRq7XtDW0wg">Info</a></td>
+                </tr>
+                <tr onmouseover="fridayOn()" onmouseout="fridayOff()">
+                    <td class="day">Friday</td>
+                    <td class="event">Minecraft Server party</td>
+                    <td class="time">6:00pm - 11:59pm</td>
+                    <td class="addr">Zoom Meeting
+                        <div id="F"> </div>
+                    </td>
+                    <td>Link on Canvas</td>
+                    <td><a href="https://www.youtube.com/watch?v=Zr81627TTWA">Info</a></td>
+                </tr>
+                <tr onmouseover="saturdayOn()" onmouseout="saturdayOff()">
+                    <td class="day">Saturday</td>
+                    <td class="event">Lay in bed considering my place in the universe</td>
+                    <td class="time">7:00am - 10:00pm</td>
+                    <td class="addr">Zoom Meeting
+                        <div id="Sa"> </div>
+                    </td>
+                    <td>Link on Canvas</td>
+                    <td><a href="https://www.youtube.com/watch?v=XeUP83wRhjQ">Info</a></td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div id="slideshowWidget">
+            <div id="largeImage">
+                <img id="replaceImg" src="gophers-mascot.png" alt="A cartoon of Goldy Gopher">
+            </div>
+            <div id="buttons">
+                <button type="button" id="startSlide" onclick="start()">start</button>
+                <button type="button" id="stopSlide" onclick="stop()">stop</button>
+            </div>
+        </div>
+
+
+        <div id="map"></div>
+        
+    </body>
+</html>

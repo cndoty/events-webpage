@@ -1,0 +1,188 @@
+body {
+    background-color:#381819;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+    height: 40px;
+    background-color: #EFD4E7;
+}
+
+#navbar table, #navbar td, #navbar tr {
+    padding: 5px;
+}
+
+h1 { 
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+    height: 100%;
+    clear: both;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+
+/* Events DIV styling */
+
+#events table, #events th, #events td {
+    border: 3px solid #381819;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 10px;
+    color: black;
+}
+
+#events th {
+    background-color: white;
+}
+
+#events tr:nth-child(odd) { 
+    background-color: #EFD4E7; 
+}
+
+#events tr:nth-child(even) { 
+    background-color: white; 
+}
+
+img {
+    height: 100%;
+    border-radius: 25px;
+}
+
+.smallImg {
+    width: 75px;
+}
+
+/* Aligning EVENTS Table and Image Divs*/
+
+#events {
+    float: left;
+}
+
+#slideshowWidget {
+    float: right;
+    margin: 10px;
+}
+
+#largeImage {
+    height: 250px;
+    width: 350px;
+    margin: 20px;
+    margin-top: 50px;
+    float:left;
+}
+
+
+#buttons{
+    clear: both;
+    width: 150px;
+    margin: auto;
+    
+}
+
+#startSlide, #stopSlide {
+    height: 20px;
+    width: 50px;
+    margin: 5px;
+}
+
+
+
+/* Aligning Widget DIVS with CSS Grid, source: https://www.w3schools.com/css/css_grid.asp*/
+
+.grid-container {
+    width: 100%;
+    display: inline-grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+
+.widget {
+    height: 600px;
+    width: 600px;
+    background-color: #EFD4E7;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+
+/* Password Validator Widget Style */
+
+#pwvalid{
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    background-color: yellowgreen;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#background-bar{
+    height: 10px;
+    width: 200px;
+    background-color: gray;
+}
+
+#strength-bar{
+    height: 10px;
+    width: 0px;
+    background-color: darkgreen;
+}
+
+/* Form Style */
+
+#form {
+   width: 300px;
+   margin: 50px;
+   float: left;
+   background-color: #EFD4E7;
+   
+}
+
+#form table, #form td, #form tr {
+    width: 300px;
+
+    margin: auto;
+    border: 3px solid #381819;
+    border-collapse: collapse;
+    padding: 5px;
+    color: black;
+}
+
+input, select{
+    height: 20px;
+    border-radius: 3px;
+}
+
+#formMap {
+    height: 300px;
+    width: 300px;
+    float: right;
+    margin-top: 100px;
+    margin-right: 500px;
+}
+
+
+
+
+

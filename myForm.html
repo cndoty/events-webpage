@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <title>My Form</title>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <script src="myScript.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script src="loadMap.js"></script>
+        <script src="mapScript.js"></script>
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <table>
+                <tr>
+                    <td><a href=myEvents.html>My Events</a></td>
+                    <td><a href=myWidgets.html>My Widgets</a></td>
+                    <td><a href=myForm.html>My Form</a></td>
+                </tr>
+            </table>
+        </nav>
+
+        <h1>My Form</h1>
+
+        <div id="form">
+            <form action="http://www-users.cselabs.umn.edu/~liux4189/echo.php" method="POST">
+                <table>
+                    <tr>
+                        <td><label for="event">Event Name</label></td>
+                        <td><input type="text" name="event" id="event" pattern="[A-Za-z0-9 ]{1,}" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="day">Day of Week</label></td>
+                        <td><select id="day" name="day">
+                            <option value="sun">Sun</option>
+                            <option value="mon">Mon</option>
+                            <option value="tues">Tues</option>
+                            <option value="wed">Wed</option>
+                            <option value="thur">Thur</option>
+                            <option value="fri">Fri</option>
+                            <option value="sat">Sat</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="start">Start Time</label></td>
+                        <td><input type="text" name="start" id="start" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="end">Stop Time</label></td>
+                        <td><input type="text" name="end" id="end" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone Number</label></td>
+                        <td><input type="text" name="phone" id="phone" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="location">Location</label></td>
+                        <td><input type="text" name="location" id="location" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="info">Extra Info</label></td>
+                        <td><input type="text" name="info" id="info" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="url">Enter URL</label></td>
+                        <td><input type="url" name="url" id="url" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Submit"></td>
+                    </tr>
+                </table>
+
+            </form>
+        </div>
+
+        <div id="formMap">
+            <div id="map"></div>
+        </div>
+
+    </body>
+</html>
